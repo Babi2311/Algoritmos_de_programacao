@@ -1,21 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
 
-int main() {
-		
-	setlocale(LC_ALL,"portuguese");
+int main(){
 	
-	int numero;
+	int i,soma;
 	
-	printf("Informe um numero: ");
-	scanf("%d", &numero);
+	soma=0;
 	
-	if( numero >= 20 && numero <= 90){
-		printf("seu numero está entre 20 e 90");
+	for(i=1;i<=100;i++){
+		soma = soma + i;
 	}
-	else {
-		printf("seu numero não esta entre 20 e 90");
-	}
+	printf("essa é a soma: %d",soma);
+	
+	
 	return 0;
 }

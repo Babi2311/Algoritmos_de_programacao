@@ -1,21 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
 
-int main() {
-		
-	setlocale(LC_ALL,"portuguese");
+int main(){
 	
-	int num;
+	int i;
 	
-	printf("informe o numero: ");
-	scanf("%d", &num);
-	
-	if ( num >= 0 ){
-		printf("o valor é: %d", num);
+	for(i=5;i<=100;i=i+5){
+		printf("%d\n",i);
 	}
-	else if ( num < 0 ){
-		printf("o valor é: %d", -num);
-	}
+	
+	
 	return 0;
 }

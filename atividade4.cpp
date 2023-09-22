@@ -1,27 +1,16 @@
 #include <stdio.h>
-#include <locale.h>
 
 int main(){
 	
-	setlocale(LC_ALL, "Portuguese");
+	int i,soma;
 	
-	float altura;
-	char genero;
+	soma=0;
 	
-	printf("Informe altura: ");
-	scanf("%f", &altura);
-	
-	printf("Informe genero (M/F): ");
-	scanf(" %c", &genero);
-	
-	if(genero == 'M' || genero == 'm'){
-		printf("Peso ideal: %.1f", 72.7 * altura - 58);
+	for(i=1;i<=100;i++){
+		soma = soma + i;
 	}
-	else {
-		printf("Peso ideal: %.1f", 62.1 * altura - 44.7);
-	}
-	
+	printf("essa é a soma: %d",soma);
 	
 	
 	return 0;
-} 
+}
