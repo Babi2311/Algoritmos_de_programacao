@@ -1,21 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
 int main() {
+	
+	int num, soma;
+	
+	soma = 0;
+	
+	do{ 
+	printf("Informe numero: ");
+		scanf("%d", &num);
+	
+		soma = soma + num;
 		
-	setlocale(LC_ALL,"portuguese");
+		
+	}while(num != 0);
 	
-	int numero;
 	
-	printf("informe um numero: ");
-	scanf("%d", &numero);
+	printf("Resultado: %d", soma);
 	
-	if(numero %2 ==0 || numero %7 ==0){
-		printf("seu numero é divisivel por 2 ou 7");
-	}
-	else{
-		printf("seu numero não é divisivel por 2 ou 7");
-	}
 	return 0;
+	
 }
